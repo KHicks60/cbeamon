@@ -1,6 +1,25 @@
 (function(window, _) {
   window.cbeamon = window.cbeamon || {
-    numz: {/* other code */},
+    numz: {
+     
+      degreesToRadians(degrees){
+      return degrees * Math.PI / 180;
+    },
+      radiansToDegrees(radians){
+        return radians * 180 / Math.PI;
+      },
+     
+      getAngleDegrees(pointA, pointB){
+        const
+           distanceX = pointB.x - pointA.x,
+          distanceY = pointB.y - pointA.y,
+          radians = Math.atan2(distanceY, distanceX),
+          degrees = radians * 180 / Math.PI;
+          return degrees;
+      }
+      
+      /* other code */},
+      
     phyz: {
       getDistance(pointA, pointB) {
         const
