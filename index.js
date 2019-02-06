@@ -18,7 +18,7 @@
           return degrees;
       }
       
-      /* other code */},
+    },
       
     phyz: {
       getDistance(pointA, pointB) {
